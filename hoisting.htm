@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Hoisting and Scope</h1>
+  Using a let variable before it is declared will result in a ReferenceError.
+This will result in a ReferenceError:
+carName = "Volvo";
+let carName;
+
+Using a const variable before it is declared, is a syntax error, so the code will simply not run.
+
+Example
+This code will not run.
+
+carName = "Volvo";
+const carName;
+
+
+console.log(z);
+let z = 10;
+Result
+pgsql
+Copy code
+ReferenceError: Cannot access 'z' before initialization
+Why?
+
+let and const are hoisted
+
+BUT they are placed in the Temporal Dead Zone (TDZ)
+
+You cannot use them before initialization
+
+So for let and const:
+
+Declaration is hoisted ✅
+
+Access before initialization ❌
+
+
+<p id = "demo"> </p>
+
+<script src = ./hoistingPractice.js></script>
+</body>
+</html>
