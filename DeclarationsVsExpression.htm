@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   Funtion Declarations vs Expressions<br>
+   Function Expression is a function assigned to a variable   <p id = "demo"></p>
+    <br> The functions above end with a semicolon because they 
+    are a part of an executable statement.
+
+<script>
+
+    document.getElementById("demo").innerHTML= add1(4,5);
+    function add1(a,b){
+        return a+b;
+    }
+    const add2 = function(a,b){
+            return a+b;
+    };
+            document.getElementById("demo").innerHTML += "<br>"+ add2(4,5);
+
+
+
+</script>
+</body>
+</html>
