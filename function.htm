@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  Document        </title>
+    </head>
+    <body>
+        <h1>Function in Javascript </h1>
+
+        <p id = "demo"></p>
+        <script>
+        function sayHello(name = "guest"){
+                return "hello "+name;
+            }
+            function showHello(){
+                document.getElementById("demo").innerHTML = sayHello("anna");
+            }
+        showHello();
+        </script>
+    </body>
+</html>
